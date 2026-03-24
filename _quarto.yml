@@ -4,10 +4,6 @@ project:
 website:
   title: "Introduction to R for Biology Tutorials"
   reader-mode: true
-  comments:
-    hypothesis: true
-    giscus:
-      repo: marneypratt/r4bio-live
   sidebar:
     style: "docked"
     search: true
@@ -21,19 +17,7 @@ website:
 format:
   html:
     respect-user-color-scheme: true
-    theme:
-      dark: darkly
-      light: flatly
-    lightbox: auto
-    df-print: paged
-    css: styles.css
-    toc: true
-  live-html:
-    respect-user-color-scheme: true
-    theme:
-      dark: darkly
-      light: flatly
-    lightbox: auto
+    theme: pulse
     df-print: paged
     css: styles.css
     toc: true
