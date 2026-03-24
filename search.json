@@ -1,0 +1,162 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction to R for Biology Tutorials",
+    "section": "",
+    "text": "Learning how to code is similar to learning any new language. You have to learn some of the basic grammar and vocabulary, but you also need lots of practice. This website provides interactive tutorials to give you immediate, automated, interactive feedback to help you learn more effectively and at your own pace.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#interactive-tutorials",
+    "href": "index.html#interactive-tutorials",
+    "title": "Introduction to R for Biology Tutorials",
+    "section": "Interactive Tutorials",
+    "text": "Interactive Tutorials\nHere is a list of the tutorials in the Intro to R for Biology course:\n(Note that {learnr} versions of tutorials 1-6 can be found in the r4bio package)\n\nBasics\n\n\nWhy looking at data visually can be useful\nhow to install and load packages\nUnderstand what a function is and how to use a function’s help page\nUse the head() function to look at data frames\n\n\nGetting Data into R (“data-import”) [under constructions]\n\n\nLearn about objects and data types in R\nUse several functions to help investigate the structure of a data frame\nUnderstand what tidy data is\nPractice importing a csv file\n\n\nWorking with Data (“data-wrangling”) [under constructions]\n\n\nUse the dplyr package to filter, sort, and manipulate data\nHow to find and remove missing data\nLearn about the pipe operators |&gt; or %&gt;%\n\n\nDescriptive Statistics (“descriptive-stats”) [under constructions]\n\n\nLearn some basic concepts about descriptive statistics\nUse the group_by() and summarize() functions from dplyr to calculate descriptive statistics\n\n\nGraphing with ggplot (“ggplot”) [under constructions]\n\n\nUse the ggplot2 package to make\n\nscatterplots\nhistograms\nbox plots\ndot plots\n\nLearn how to do a log transformation of axes and data\nLearn some best practices in basic data visualization\n\n\nGraphing Grouped Continuous Data (“graphing-groups”) [under constructions]\n\n\nDetermine variable types and which axes to put each on\nDiscuss why bar graphs with means and standard errors can be misleading\nTips for initial data exploration\nLearn the pros and cons of different graphs for grouped continuous data\nWhat to include in a figure legend\n\n\nLast updated on March 24, 2026",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "about",
+    "section": "",
+    "text": "Marney Pratt is a Senior Laboratory Instructor in the Biological Sciences Department at Smith College in Northampton, MA. She has been teaching Course-based Undergradaute Research Experiences (CUREs) in lab courses at Smith since 2014.\nThe main courses Dr. Pratt currently teaches include an intropductory level biology lab (BIO 131 - Research in Biodiversity, Ecology, and Conservation) and an intermediate lab (BIO 201 - Animal Physiology Lab). She has taught Bio 131 every single semester since 2014, and generally teaches 2-4 sections each semester. Because she is always changing and iterating to improve the course, she has a lot of experience with trying to teach basic data visualization and analysis skills to students who mostly have no background in statistics or coding. She has been using R in this course since the fall of 2019.",
+    "crumbs": [
+      "about"
+    ]
+  },
+  {
+    "objectID": "basics.html#introduction",
+    "href": "basics.html#introduction",
+    "title": "Intro to R for Biology: Basics",
+    "section": "Introduction",
+    "text": "Introduction\nThis tutorial will help you learn some basics of how to use R including installing and loading packages, what functions are, and how to use help pages.\nBefore getting started with this tutorial, it is useful to understand some of the basics about R and R Studio. You can read Chapter 1 Getting Started with Data in R from the Modern Dive online textbook to get a basic introduction.\n\nLearning goals\n\nWhy looking at data visually can be useful\nhow to install and load packages\nUnderstand what a function is and how to use a function’s help page\nUse the head() function to look at data frames",
+    "crumbs": [
+      "Basics"
+    ]
+  },
+  {
+    "objectID": "basics.html#irises",
+    "href": "basics.html#irises",
+    "title": "Intro to R for Biology: Basics",
+    "section": "Irises",
+    "text": "Irises\nIris species can be difficult to tell apart in the field. Edgar Anderson measured the sepal and petal length and width of three species of Iris flowers to see if their flower morphology could be used to help distinguish species.\n\n\n\n(Image from Mithy et al. 2022)\n\n\nBelow is a “chunk” with some R code. Press the Run Code button to run the code and make a graph showing the petal width versus the petal length for three species of Iris flowers.\n\n\n\n\n\n\n\n\n\n\n\n\nDoes the graph from the code above support the hypothesis that Iris versicolor is intermediate in size because it is a hybrid between I. setosa and I. virginica?\n\n\n\n\n\nNo, the data are not consistent with the hypothesis\n\n\n\n\nYes, the data are consistent and sufficient to support the hypothesis\n\n\n\n\nYes, it is clear it is a hybrid because it is intermediate in petal size\n\n\n\n\nYes, the data are consistent with the hypothesis, but these results alone are not sufficient to know the hypothesis is definitely true",
+    "crumbs": [
+      "Basics"
+    ]
+  },
+  {
+    "objectID": "basics.html#section",
+    "href": "basics.html#section",
+    "title": "Intro to R for Biology: Basics",
+    "section": "",
+    "text": "Biologists collect data to help answer questions of interest. The Intro to R for Biology series of tutorials will help you learn just enough coding in R, data manipulation, data visualization, and descriptive statistics to get you started so you can start exploring data to answer questions.\nSome of the important topics this specific tutorial will cover include\n\npackages\nfunctions\nhelp page\ndata frames",
+    "crumbs": [
+      "Basics"
+    ]
+  },
+  {
+    "objectID": "basics.html#packages",
+    "href": "basics.html#packages",
+    "title": "Intro to R for Biology: Basics",
+    "section": "Packages",
+    "text": "Packages\nOne of the most important thing to know about is packages. R packages are a really powerful way to put a lot of useful code, documentation, and data together to make certain tasks easier to do.\nWhen you start a new R session, only certain packages are pre-loaded for you including the {base} R package and several others. But many other useful packages must be installed (once) and then loaded (every time you restart R) for you to be able to use them. A good analogy is how you have to download an app onto your computer or phone once to install it, but then you have to actually open the app each time you want to use it.\nTo install a package we use the code install.packages(\"packageName\") - and remember, you only have to do this ONCE for a package on a particular computer\nTo load a package (open it up and use it) we use the code library(packageName) - and we need to do this EVERY TIME we want to use this package in a new session (a new session starts when you open RStudio to use it, and you can also restart R to start a new session under the “Session” menu item in RStudio)\nFor more background information on packages, see What are R Packages?",
+    "crumbs": [
+      "Basics"
+    ]
+  },
+  {
+    "objectID": "basics.html#section-1",
+    "href": "basics.html#section-1",
+    "title": "Intro to R for Biology: Basics",
+    "section": "",
+    "text": "The code we used to graph the Iris petal data had some important features you will need to know to make your own graphs. Here is the code we ran before:\n\nlibrary(ggplot2)\n\nggplot(data = iris, aes(x = Petal.Length, y = Petal.Width, color = Species)) +\n  geom_point(size = 3) +\n  ylab(\"Petal Width (cm)\") +\n  xlab(\"Petal Length (cm)\") +\n  theme_classic(base_size = 16)\n\nNotice we did NOT use install.packages() in this code because the package had already been installed.\nWe did use library(ggplot2) because we needed to load the {ggplot2} package (which is the main graphing package we will use in this course)\nYou might notice that there are a lot different words followed by parentheses. These words followed by parentheses are called functions.\nlibrary() is a function what loads the package inside the parentheses.\nggplot() is a function from the {ggplot2} package that makes graphs using the code that follows it (including additional functions)\nIf we want to be really clear what package a function comes from, we use a double colon between the package and function name package::function() so in this example it would be ggplot2::ggplot()\nWe will come back to learning more about how to make graphs with {ggplot2} in later tutorials. Let’s learn more about some of the basic tools you will need to be able to make your own beautiful and informative graphs.",
+    "crumbs": [
+      "Basics"
+    ]
+  },
+  {
+    "objectID": "basics.html#functions",
+    "href": "basics.html#functions",
+    "title": "Intro to R for Biology: Basics",
+    "section": "Functions",
+    "text": "Functions\nOne power of R is that you can also create functions that summarizes a bunch of lines of code together.\nA function consists of the name of the function and then the augments you can use as inputs for the function in parentheses.\nAn example is the sqrt() function that takes the square root of whatever is inside the parentheses.\nWhat is the square root of 625?\nTo find out, type sqrt(625) in the code chunk below and click Run Code.\n\n\n\n\n\n\n\n\n\nTo find the square root of 625, type sqrt(625)\n\n\nsqrt(625)\nsqrt(625)\n\n\n\n\n\n\nR prints the result of 25 (note that the [1] is telling you that your output just has one row).",
+    "crumbs": [
+      "Basics"
+    ]
+  },
+  {
+    "objectID": "basics.html#section-2",
+    "href": "basics.html#section-2",
+    "title": "Intro to R for Biology: Basics",
+    "section": "",
+    "text": "sqrt() is a fairly simple function. But let’s say you are not sure how to use the function. You can open a help document that will describe how to use the function.\nThere are several ways to get to a help document for a function. You can simply click on the Help tab in the lower right pane of RStudio and then type the name of the function in the search window\n\n\n\n\n\nAlternatively, you can also type the name of the function with a question mark in front of the function and no parentheses after in the R console (lower left pane) to open the help document\n\n\n\n\n\nFor now, let’s just click on this link to open the sqrt() help documentation\nNOTE: to open a link in a new tab:\n\nHold down the COMMAND key and then click the link on a Mac\nHold down the CTRL key and then click the link on Windows & Linux",
+    "crumbs": [
+      "Basics"
+    ]
+  },
+  {
+    "objectID": "basics.html#understanding-help-documents",
+    "href": "basics.html#understanding-help-documents",
+    "title": "Intro to R for Biology: Basics",
+    "section": "Understanding Help Documents",
+    "text": "Understanding Help Documents\nThe help document shows the name of the help page and the package it is from at the top left corner of the help page (the package name is in the {} brackets).\n\n\n\n\n\nThe sqrt() function is from a help page called Miscellaneous Mathematical Functions and is abbreviated as MathFun in the top left corner.\nThe sqrt() function is part of base R so the package it is from is shown as {base}\nAs stated before, sqrt() is a simple function and only has one argument x which is “a numeric or complex vector or array.” (which means you can put in a single value, a vector, or matrix of values inside the function)\nSee this link Calling functions to help understand the basics of what a function is and how to use it\nSometimes the help document doesn’t tell you what you want to know. Don’t feel shy about doing an internet search for more helpful answers and examples. All of us (even the most experienced programmers) turn to the internet and other resources for help.",
+    "crumbs": [
+      "Basics"
+    ]
+  },
+  {
+    "objectID": "basics.html#intro-to-data-frames",
+    "href": "basics.html#intro-to-data-frames",
+    "title": "Intro to R for Biology: Basics",
+    "section": "Intro to Data Frames",
+    "text": "Intro to Data Frames\nWe often want to use R to analyze a larger dataset that has many rows and columns. We are going to skip over the basics of vectors, lists, and matrices for now, but you can look at this link about Data Structures for a quick overview of different ways R can store data including scalars, vectors, matrices, arrays, data frames, and lists.\nIn this course, we are going to focus on data frames. A data frame is a “spreadsheet”-type of dataset where each row is an observation and each column is a different variable.\nLet’s use the function `head()’ to look at the data frame for the Iris flower dataset that we graphed before.\n\n\n\n\n\n\n\n\nThe `head()’ function shows a preview of the first 6 rows of the data frame.\nThe reason you did not have to import the iris data frame into R is that this dataset is already loaded into base R.",
+    "crumbs": [
+      "Basics"
+    ]
+  },
+  {
+    "objectID": "basics.html#head-function",
+    "href": "basics.html#head-function",
+    "title": "Intro to R for Biology: Basics",
+    "section": "head() Function",
+    "text": "head() Function\nControl or command + click this link to open the head() help documentation to open it in a new browser window and keep this window open for the time being.\n\n\n\n\n\n\nWhat package is the head() function part of?\n\n\n\n\n\nutils\n\n\n\n\nbase\n\n\n\n\ndplyr\n\n\n\n\ngraphics\n\n\n\n\n\n\n\n\n\n\n\nNotice on the help page that the head() function has two things listed under Arguments (sqrt() only had one).\nArguments are the things that go within the parentheses for a function. In this case, there are two arguments in the head() function - x and … Each of these arguments is explained under the Arguments section.\nGenerally, for the head() function we just put in the argument x which is an R object that can be viewed as a data frame.\nThis is why we can type head(iris) to view the iris data (the object we are viewing in this case is iris)\nBy default, the head() function shows only the first 6 rows of the data frame. But the ... in the function indicates you can add additional arguments in the function.\nNotice that one of the arguments we can add is n. The description of of n under the Arguments section may seem like it is written in another language, but the gist of it is that n will let us select the number of rows we want to display. Let’s display 20 rows of data by running the code below.\n\n\n\n\n\n\n\n\nWe will learn a lot more about data frames in future tutorials. But let’s look at the iris dataset a little more.",
+    "crumbs": [
+      "Basics"
+    ]
+  },
+  {
+    "objectID": "basics.html#iris-data-frame",
+    "href": "basics.html#iris-data-frame",
+    "title": "Intro to R for Biology: Basics",
+    "section": "iris Data Frame",
+    "text": "iris Data Frame\nBecause the iris data frame is included in base R, it also has a help page that describes the dataset.\nControl or command + click this link to open the iris help documentation to open it in a new browser window and keep this window open for the time being.\nAnswer the questions below using information in the iris help document\n\n\n\n\n\n\nAnswer the following questions about the iris data\n\n\n\n\nHow many species of iris are included in the dataset?\n\n\n1\n\n\n\n\n2\n\n\n\n\n3\n\n\n\n\n4\n\n\n\n\n\n\n\n\n\n\n\nWhat is represented by each row in the dataset?\n\n\nsepal lengths\n\n\n\n\neach species\n\n\n\n\npetal widths\n\n\n\n\nindividual flowers\n\n\n\n\n\n\n\n\n\n\n\nWhat unit is the sepal length measured in?\n\n\nmeters\n\n\n\n\ncentimeters\n\n\n\n\nmicrometers\n\n\n\n\ninches\n\n\n\n\n\n\n\n\n\n\n\nHow many flowers from each species was measured?\n\n\n20\n\n\n\n\n150\n\n\n\n\n6\n\n\n\n\n50\n\n\n\n\n\n\n\n\n\n\n\nHow many total flowers were measured for all the species?\n\n\n150\n\n\n\n\n6\n\n\n\n\n20\n\n\n\n\n50\n\n\n\n\n\n\n\n\n\n\n\nHow many variables (=columns) does the iris dataset have?\n\n\n4\n\n\n\n\n5\n\n\n\n\n6\n\n\n\n\n3\n\n\n\n\n\n\n\n\n\n\n\nLook back at the help file for the iris data.  What is the name of the journal where Fisher used the iris data to demonstrate some statistical methods?\n\n\n\n\n\n\n\n\n\n\n\nWhile the iris data itself is just a series of measurements on flowers from a few species of irises, it is worth noting there are links between eugenics and the development of many statistical methods.\nIf you are not already familiar, it would be worth spending some time understanding what eugenics is, who R.A. Fisher is, and how the field of statistics was developed.\nClick here for a link to an article that can get you started on informing yourself about the links between genetics, statistics, and eugenics. Eugenics and the Ethics of Statistical Analysis",
+    "crumbs": [
+      "Basics"
+    ]
+  },
+  {
+    "objectID": "basics.html#conclusion",
+    "href": "basics.html#conclusion",
+    "title": "Intro to R for Biology: Basics",
+    "section": "Conclusion",
+    "text": "Conclusion\nThere is more to learn before you can use R for data analysis and making your own graphs. Hopefully this lesson got you started on understanding a few basic things about how R works.\nNow get ready for the Learning R Roller Coaster - it is a wild ride but totally worth it!\n\nArtwork by Allison Horst",
+    "crumbs": [
+      "Basics"
+    ]
+  },
+  {
+    "objectID": "basics.html#resources",
+    "href": "basics.html#resources",
+    "title": "Intro to R for Biology: Basics",
+    "section": "Resources",
+    "text": "Resources\n\nChapter 1 Getting Started with Data in R from the Modern Dive online textbook to get a basic introduction.\nWhat are R Packages? from the Modern Dive online textbook\nCalling functions to help understand the basics of what a function is and how to use it\nData Structures for a quick overview of different ways R can store data including scalars, vectors, matrices, arrays, data frames, and lists\nEugenics and the Ethics of Statistical Analysis",
+    "crumbs": [
+      "Basics"
+    ]
+  }
+]
