@@ -12,7 +12,7 @@ Here is a list of the tutorials in the **Intro to R for Biology** course:
 
 (Note that {learnr} versions of tutorials 1-6 can be found in the [`r4bio` package](https://github.com/marneypratt/r4bio))
 
-1.  [Basics](https://marneypratt.github.io/r4bio-live/basics.html)
+1.  [Basics](basics.qmd)
 
 -   Why looking at data visually can be useful
 -   how to install and load packages

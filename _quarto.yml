@@ -17,7 +17,10 @@ website:
 format:
   html:
     respect-user-color-scheme: true
-    theme: pulse
+    theme:
+      light: pulse
+      dark: vapor
+    lightbox: auto
     df-print: paged
     css: styles.css
     toc: true
