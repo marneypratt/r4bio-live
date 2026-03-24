@@ -1,0 +1,9 @@
+---
+title: "about"
+format: html
+---
+
+Marney Pratt is a Senior Laboratory Instructor in the Biological Sciences Department at Smith College in Northampton, MA. She has been teaching Course-based Undergradaute Research Experiences (CUREs) in lab courses at Smith since 2014.
+
+The main courses Dr. Pratt currently teaches include an intropductory level biology lab (BIO 131 - Research in Biodiversity, Ecology, and Conservation) and an intermediate lab (BIO 201 - Animal Physiology Lab). She has taught Bio 131 every single semester since 2014, and generally teaches 2-4 sections each semester. Because she is always changing and iterating to improve the course, she has a lot of experience with trying to teach basic data visualization and analysis skills to students who mostly have no background in statistics or coding. She has been using R in this course since the fall of 2019. 
+

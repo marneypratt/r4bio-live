@@ -1,0 +1,58 @@
+---
+title: "Introduction to R for Biology Tutorials"
+author: "Marney Pratt"
+format: html
+---
+
+Learning how to code is similar to learning any new language. You have to learn some of the basic grammar and vocabulary, but you also need lots of practice. This website provides interactive tutorials to give you immediate, automated, interactive feedback to help you learn more effectively and at your own pace.
+
+## Interactive Tutorials
+
+Here is a list of the tutorials in the **Intro to R for Biology** course:
+
+(Note that {learnr} versions of tutorials 1-6 can be found in the [`r4bio` package](https://github.com/marneypratt/r4bio))
+
+1.  [Basics](https://marneypratt.github.io/r4bio-live/basics.html)
+
+-   Why looking at data visually can be useful
+-   how to install and load packages
+-   Understand what a function is and how to use a function's help page
+-   Use the `head()` function to look at data frames
+
+2.  **Getting Data into R** ("data-import") \[under constructions\]
+
+-   Learn about objects and data types in R
+-   Use several functions to help investigate the structure of a data frame
+-   Understand what tidy data is
+-   Practice importing a csv file
+
+3.  **Working with Data** ("data-wrangling") \[under constructions\]
+
+-   Use the `dplyr` package to filter, sort, and manipulate data
+-   How to find and remove missing data
+-   Learn about the pipe operators `|>` or `%>%`
+
+4.  **Descriptive Statistics** ("descriptive-stats") \[under constructions\]
+
+-   Learn some basic concepts about descriptive statistics
+-   Use the `group_by()` and `summarize()` functions from `dplyr` to calculate descriptive statistics
+
+5.  **Graphing with ggplot** ("ggplot") \[under constructions\]
+
+-   Use the `ggplot2` package to make
+    -   scatterplots
+    -   histograms
+    -   box plots
+    -   dot plots
+-   Learn how to do a log transformation of axes and data
+-   Learn some best practices in basic data visualization
+
+6.  **Graphing Grouped Continuous Data** ("graphing-groups") \[under constructions\]
+
+-   Determine variable types and which axes to put each on
+-   Discuss why bar graphs with means and standard errors can be misleading
+-   Tips for initial data exploration
+-   Learn the pros and cons of different graphs for grouped continuous data
+-   What to include in a figure legend
+
+#### Last updated on March 24, 2026

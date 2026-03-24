@@ -1,0 +1,39 @@
+project:
+  type: website
+
+website:
+  title: "Introduction to R for Biology Tutorials"
+  reader-mode: true
+  comments:
+    hypothesis: true
+    giscus:
+      repo: marneypratt/r4bio-live
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: basics.qmd
+        text: Basics
+      - about.qmd
+
+format:
+  html:
+    respect-user-color-scheme: true
+    theme:
+      dark: darkly
+      light: flatly
+    lightbox: auto
+    df-print: paged
+    css: styles.css
+    toc: true
+  live-html:
+    respect-user-color-scheme: true
+    theme:
+      dark: darkly
+      light: flatly
+    lightbox: auto
+    df-print: paged
+    css: styles.css
+    toc: true
