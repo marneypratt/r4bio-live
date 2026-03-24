@@ -9,6 +9,9 @@ format:
   live-html:
     toc: true
     toc-location: left
+    theme:
+      light: pulse
+      dark: superhero
 engine: knitr
 webr:
   packages:

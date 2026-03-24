@@ -4,10 +4,10 @@ project:
 website:
   title: "Introduction to R for Biology Tutorials"
   reader-mode: true
-  sidebar:
-    style: "docked"
+  navbar:
+    background: primary
     search: true
-    contents:
+    left:
       - href: index.qmd
         text: Home
       - href: basics.qmd
@@ -19,7 +19,7 @@ format:
     respect-user-color-scheme: true
     theme:
       light: pulse
-      dark: vapor
+      dark: superhero
     lightbox: auto
     df-print: paged
     css: styles.css
